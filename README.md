@@ -1,6 +1,6 @@
 # [gogulaanand-blog.vercel.app](https://gogulaanand-blog.vercel.app)
 
-My blog page built with Next.js
+My blog page built with Next.js, where i write down my thoughts and learnings. Happy reading !
 
 To run locally,
 ```
