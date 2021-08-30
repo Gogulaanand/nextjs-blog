@@ -29,15 +29,9 @@ export function getSortedPostsData() {
     };
   });
   // Sort posts by date
-  return allPostsData.sort((a, b) => {
-    if (a < b) {
-      return 1;
-    } else if (a > b) {
-      return -1;
-    } else {
-      return 0;
-    }
-  });
+  return [...allPostsData].sort(function(a,b) {
+    return new Date(`${b.date}T00:00:00.000Z`).valueOf() - new Date(`${a.date}T00:00:00.000Z`).valueOf()
+  })
 }
 
 export function getAllPostIds() {
