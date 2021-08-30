@@ -19,7 +19,7 @@ export default function Home({ allPostsData }: {allPostsData:{date: string, titl
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hi, I am Gogulaanand</p>
-        <p>(This is my blog website - built with Next.js. Happy Reading !)</p>
+        <p>This is a place where i pen my thoughts and learnings. <br/>Happy Reading !</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blogs</h2>
