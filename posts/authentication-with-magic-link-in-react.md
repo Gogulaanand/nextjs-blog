@@ -1,6 +1,6 @@
 ---
 title: "Authentication with magic link in React"
-date: "2020-08-14"
+date: "2021-08-14"
 ---
 
 Authenticating users via magic link is on the rise recently (for a good reason). Magic link is the way of sending users a unique link to their mail, using which they can signup / login. It removes the need for username, password, activation email, forgot password scenarios etc.

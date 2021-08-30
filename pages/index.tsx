@@ -22,7 +22,7 @@ export default function Home({ allPostsData }: {allPostsData:{date: string, titl
         <p>(This is my blog website - built with Next.js. Happy Reading !)</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Blogs</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -31,7 +31,7 @@ export default function Home({ allPostsData }: {allPostsData:{date: string, titl
               </Link>
               <br />
               <small className={utilStyles.lightText}>
-                {/* <Date dateString={date} /> */}
+                <Date dateString={date} />
               </small>
             </li>
           ))}
