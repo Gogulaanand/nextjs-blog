@@ -4,7 +4,7 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import React, {useEffect} from "react";
-import Prism from "Prismjs";
+import Prism from "prismjs";
 
 const name = "Gogulaanand";
 export const siteTitle = "Next.js Sample Website";

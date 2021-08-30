@@ -22,7 +22,7 @@ export default function Home({ allPostsData }: {allPostsData:{date: string, titl
         <p>This is a place where i pen my thoughts and learnings. <br/>Happy Reading !</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blogs</h2>
+        <h2 className={utilStyles.headingLg}>Posts</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
