@@ -1,3 +1,11 @@
-#[gogulaanand-blog.vercel.app](https://gogulaanand-blog.vercel.app)
+# [gogulaanand-blog.vercel.app](https://gogulaanand-blog.vercel.app)
 
-This is the source code of my blog page built with Next.js
+My blog page built with Next.js
+
+To run locally,
+```
+cd nextjs-blog
+npm i
+npm run dev
+```
+open https://localhost:3000 to view the changes
