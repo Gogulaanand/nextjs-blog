@@ -25,6 +25,11 @@ export default function Layout({ children, home }: {children: React.ReactNode, h
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link
+          rel="preload"
+          href="https://unpkg.com/prismjs@0.0.1/themes/prism-tomorrow.css"
+          as="script"
+        />
       </Head>
       <header className={styles.header}>
         {home ? (

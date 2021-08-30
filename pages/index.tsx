@@ -31,7 +31,7 @@ export default function Home({ allPostsData }: {allPostsData:{date: string, titl
               </Link>
               <br />
               <small className={utilStyles.lightText}>
-                <Date dateString={date} />
+                {/* <Date dateString={date} /> */}
               </small>
             </li>
           ))}
