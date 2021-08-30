@@ -3,12 +3,17 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import React from "react";
+import React, {useEffect} from "react";
+import Prism from "Prismjs";
 
 const name = "Gogulaanand";
 export const siteTitle = "Next.js Sample Website";
 
 export default function Layout({ children, home }: {children: React.ReactNode, home?:boolean}) {
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
