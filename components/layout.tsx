@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import React, {useEffect} from "react";
+import {useEffect} from "react";
 import Prism from "prismjs";
+import ThemeSwitch from "./themeSwitch";
 
 const name = "Gogulaanand";
 export const siteTitle = "Blog";
@@ -36,40 +36,24 @@ export default function Layout({ children, home }: {children: React.ReactNode, h
           as="script"
         />
       </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
+      <header>
+        {home? (<>
+        <div className="flex flex-row">
+          <Image
+            priority
+            src="/images/profile.jpg"
+            className="rounded-full"
+            height={56}
+            width={56}
+            alt={name}
+          />
+          {/* <ThemeSwitch/> */}
+          </div>
+          <p className="text-xl">Personal blog by <a href="https://mobile.twitter.com/Gogulaanand13" target="_blank" rel="noreferrer">{name}</a>
+          <br/>This is a place where i pen my thoughts and learnings. Happy Reading !</p>
+       </> 
+       ) : (<Link href="/"><a className="flex justify-start">← back</a></Link>)
+        }
       </header>
       <main>{children}</main>
       {!home && (
@@ -79,6 +63,7 @@ export default function Layout({ children, home }: {children: React.ReactNode, h
           </Link>
         </div>
       )}
+      
     </div>
   );
 }
