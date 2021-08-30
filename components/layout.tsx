@@ -7,7 +7,7 @@ import React, {useEffect} from "react";
 import Prism from "prismjs";
 
 const name = "Gogulaanand";
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "Blog";
 
 export default function Layout({ children, home }: {children: React.ReactNode, home?:boolean}) {
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function Layout({ children, home }: {children: React.ReactNode, h
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Personal blog page of Gogulaanand"
         />
         <meta
           property="og:image"

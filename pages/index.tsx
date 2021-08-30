@@ -11,7 +11,7 @@ export const getStaticProps: GetStaticProps = async() => {
   return { props: { allPostsData } };
 }
 
-export default function Home({ allPostsData }: {allPostsData:{date: string, title: string, id: string}[]}) {
+export default function Home({ allPostsData }: {allPostsData:{date: string, title: string, id: string, description: string}[]}) {
   return (
     <Layout home>
       <Head>
@@ -19,12 +19,12 @@ export default function Home({ allPostsData }: {allPostsData:{date: string, titl
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hi, I am Gogulaanand</p>
-        <p>This is a place where i pen my thoughts and learnings. <br/>Happy Reading !</p>
+        <p>This is a place where i pen my thoughts and learnings. Happy Reading !</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Posts</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title, description }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
@@ -32,6 +32,10 @@ export default function Home({ allPostsData }: {allPostsData:{date: string, titl
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
+              </small>
+              <br/>
+              <small>
+                {description}
               </small>
             </li>
           ))}
