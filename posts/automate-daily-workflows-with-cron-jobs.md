@@ -1,6 +1,7 @@
 ---
 title: "Automate daily workflows with cron jobs"
 date: "2021-08-29"
+description: "Cron jobs are basically time based schedulers that execute certain actions based on the command provided or the steps mentioned in a script."
 ---
 
 #### Ok, first of all, what are cron jobs ?

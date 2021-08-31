@@ -1,6 +1,7 @@
 ---
 title: "Error tracking and monitoring in Next.js"
 date: "2021-08-15"
+description: "Error tracking and performance monitoring is crucial to any application running in production. Simply because we cant expect the end user to report..."
 ---
 
 Error tracking and performance monitoring is crucial to any application running in production. Simply because we cant expect the end user to report every issue they face and it is our responsibility to proactively check for errors and fix them for better user experience.
